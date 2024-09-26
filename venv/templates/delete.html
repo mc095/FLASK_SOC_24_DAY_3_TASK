@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Employee</title>
+    <style>
+      * {
+        background-color: skyblue;
+      }
+      h2 {
+        text-align: center;
+        color: black;
+      }
+      hr {
+        width: 70%;
+        height: 2px;
+        background-color: brown;
+        border: none;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 8px;
+      }
+      input {
+        background-color: white;
+      }
+      .inp-2 {
+        background-color: gainsboro;
+        margin-left: 0%;
+      }
+      label {
+        padding-right: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Remove Employee from the list</h2>
+    <hr />
+    <div class="container">
+      <form action="/delete" method="POST">
+        <label for="empID">Employee ID: </label>
+        <input type="text" id="empID" name="empID" />
+        <input class="inp-2" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
